@@ -9,7 +9,7 @@ const Footer = () => (
         <p>¿Interesado en trabajar juntos?</p>
         <Button
             className="p-button-rounded p-button-outlined btn-mail"
-            onClick={() => window.location.href = "mailto:alexander@tu-dominio.com"}
+            onClick={() => window.location.href = "mailto:proyecetoviento113@gmail.com"}
         >
             <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: 10 }} />
             Envíame un correo
