@@ -1,0 +1,9 @@
+.profilepicture {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%); /* Recorta la imagen en un círculo */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    margin-top: 100px;
+    margin-right: 550PX;
+  }
+  

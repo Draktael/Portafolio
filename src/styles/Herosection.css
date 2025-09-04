@@ -1,0 +1,205 @@
+/* HeroSection.css */
+#home {
+  margin-top: -200px;
+  /* Ajusta el valor según lo que necesites */
+  padding: 0px;
+}
+
+.all {
+  background: linear-gradient(to bottom, #010415, #181434);
+
+}
+
+:root {
+  --navbar-height: 150px;
+}
+
+.container {
+  padding-top: 150px
+}
+
+/* Cuando navegas a #start, #home, #proyectos o #contact, deja espacio para el navbar */
+#start,
+#home,
+#proyectos,
+#contact {
+  scroll-margin-top: var(--navbar-height);
+}
+
+/* Asegura que el título no colapse su margen con el contenedor */
+.nombre {
+  margin-top: 0;
+}
+
+.profilepicture.p-image img {
+  width: 100px;
+  /* ajusta a tu gusto: 150/180/200px */
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 410px;
+  margin-bottom: 95px;
+  object-fit: cover;
+  /* recorta sin deformar */
+  display: block;
+}
+
+/* Apunta al <img> interno que renderiza PrimeReact Image */
+.project-image-wrapper .p-image img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Zoom SOLO cuando el mouse está sobre la imagen (o su contenedor directo de PrimeReact) */
+.project-image-wrapper .p-image:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.nombre {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.primerparrafo {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: -20px;
+}
+
+.segundoparrafo {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.resaltado1 {
+  color: #9bc4db;
+}
+
+.resaltado2 {
+  color: #ab8aa7;
+}
+
+.social {
+  font-size: 35px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.p-button-instagram {
+  margin: 0 10px;
+  color: #d6225f;
+  border-color: #dd3454;
+  padding: 12px 24px
+}
+
+.p-button-linkedin {
+  margin: 0 10px;
+  padding: 12px 30px
+}
+
+.p-button-github {
+
+  color: #fff;
+  border: 2px solid #333;
+  min-width: 120px;
+  margin: 0 10px;
+  padding: 12px 30px
+}
+
+.Habilidades-titulo {
+  font-size: 35px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hability-buttons {
+  margin: 0 10px;
+  padding: 12px 30px;
+  background-color: transparent;
+  /* Quita el fondo */
+  border-radius: 50px;
+  /* Hace el botón redondeado */
+}
+
+.btn-react {
+  border: 1px solid #61DBFB;
+  color: #61DBFB;
+}
+
+.btn-js {
+  border: 1px solid #F7DF1E;
+  color: #F7DF1E;
+}
+
+.btn-node {
+  border: 1px solid #68A063;
+  color: #68A063;
+}
+
+.btn-laravel {
+  border: 2px solid #FF2D20;
+  color: #FF2D20;
+}
+
+.btn-axios {
+  border: 2px solid #5A29E4;
+  /* color púrpura de Axios */
+  color: #5A29E4;
+}
+
+.btn-html {
+  border: 2px solid #E34F26;
+  color: #E34F26;
+}
+
+.btn-css {
+  border: 2px solid #1572B6;
+  color: #1572B6;
+}
+
+.btn-stripe {
+  border: 2px solid #635BFF;
+  /* azul característico de Stripe */
+  color: #635BFF;
+}
+
+.contacto {
+  font-size: 35px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-image-container {
+  width: 850px;
+  /* ajusta según necesites */
+  height: 500px;
+  /* altura fija opcional */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.p-image-preview-indicator {
+  display: none !important;
+}
+
+.project-skills {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  /* columnas iguales */
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+}
