@@ -29,7 +29,7 @@ const Herosection = () => (
     <div className="container">
         {/* Header / Avatar */}
         <section id="start" className="profilepicture-Header">
-            <Image src={fotoperfil} alt="Foto de perfil de Alexander Camaño" className="profilepicture" />
+            <img src={fotoperfil} alt="Foto de perfil de Alexander Camaño" className="profilepicture" />
         </section>
 
         {/* Hero */}
