@@ -14,8 +14,8 @@ import proyecto3 from "../assets/proyecto_example3.jpg";
 import Foto_Perfil from "../assets/Alexander_Caamano_A.jpg";
 
 const projects = [
-    { id: 1, title: "Gestor de inventario", desc: "Gestor simple de inventario funcional", img: proyecto1, alt: "Vista previa Proyecto 1" },
-    { id: 2, title: "Sho.es", desc: "E-commerce de productos, con carrito de compras y sistema de pago implementado", img: proyecto2, alt: "Vista previa Proyecto 2" },
+    { id: 1, title: "Gestor de inventario", desc: "Gestor simple de inventario funcional", img: proyecto1, alt: "Vista previa Proyecto 1", href: "https://github.com/Draktael/Gestion-de-inventario.git" },
+    { id: 2, title: "Sho.es", desc: "E-commerce de productos, con carrito de compras y sistema de pago implementado", img: proyecto2, alt: "Vista previa Proyecto 2", href: "https://github.com/Draktael/e-commerce"},
     { id: 3, title: "Calor.IAs (En progreso 🚧)", desc: "Aplicacion Movil de trackeo de macros con camara", img: proyecto3, alt: "Vista previa Proyecto 3" },
 ];
 
@@ -29,7 +29,7 @@ const Herosection = () => (
     <div className="container">
         {/* Header / Avatar */}
         <section id="start" className="profilepicture-Header">
-            <Image src={Foto_Perfil} alt="Foto de perfil de Alexander Camaño" className="profilepicture"  />
+            <Image src={Foto_Perfil} alt="Foto de perfil de Alexander Camaño" className="profilepicture" />
         </section>
 
         {/* Hero */}
@@ -71,7 +71,19 @@ const Herosection = () => (
                         <h3 className="project-title">{p.title}</h3>
                         <p className="project-desc">{p.desc}</p>
                         <div className="project-image-container">
-                            <Image src={p.img} alt={p.alt} className="project-image" preview />
+                            {p.href ? (
+                                <a
+                                    href={p.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`Abrir ${p.title} en GitHub`}
+                                    className="block"
+                                >
+                                    <Image src={p.img} alt={p.alt} className="project-image" />
+                                </a>
+                            ) : (
+                                <Image src={p.img} alt={p.alt} className="project-image" preview />
+                            )}
                         </div>
                         {p.id === 1 && (
                             <div className="project-skills">
@@ -129,7 +141,7 @@ const Herosection = () => (
             </div>
         </section>
 
-   
+
     </div>
 );
 
