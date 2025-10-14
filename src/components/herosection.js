@@ -11,7 +11,7 @@ import proyecto1 from "../assets/Wireframe_Proyecto1.png";
 import proyecto2 from "../assets/Wireframe_Proyecto2.png";
 import proyecto3 from "../assets/proyecto_example3.jpg";
 
-import Foto_Perfil from "../assets/Alexander_Caamano_A.jpg";
+import fotoperfil from "../assets/profile.jpg";
 
 const projects = [
     { id: 1, title: "Gestor de inventario", desc: "Gestor simple de inventario funcional", img: proyecto1, alt: "Vista previa Proyecto 1", href: "https://github.com/Draktael/Gestion-de-inventario.git" },
@@ -29,7 +29,7 @@ const Herosection = () => (
     <div className="container">
         {/* Header / Avatar */}
         <section id="start" className="profilepicture-Header">
-            <Image src={Foto_Perfil} alt="Foto de perfil de Alexander Camaño" className="profilepicture" />
+            <Image src={fotoperfil} alt="Foto de perfil de Alexander Camaño" className="profilepicture" />
         </section>
 
         {/* Hero */}
