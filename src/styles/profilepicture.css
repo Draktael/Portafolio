@@ -3,8 +3,7 @@
   height: 100px;
   clip-path: circle(50%);
   object-fit: cover;
-  display: block;
   margin-top: 100px;
-  margin-left: 400px;
+  margin-left: -510px;
   transform: translateY(-110px); /* Mueve la imagen 20px hacia arriba */
 }
